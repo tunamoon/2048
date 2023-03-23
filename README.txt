@@ -7,9 +7,7 @@ PennKey: 6039222
 =: Core Concepts :=
 ===================
 
-- List the four core concepts, the features they implement, and why each feature
-  is an appropriate use of the concept. Incorporate the feedback you got after
-  submitting your proposal.
+- The four concepts used.
 
   1. 2D Arrays - The standard 2048 board is a 4x4 board, so I used a 4x4 2D array that saved
   the location of the blocks as well as the value of each block. Initially, the value of each
@@ -44,8 +42,7 @@ PennKey: 6039222
 =: Your Implementation :=
 =========================
 
-- Provide an overview of each of the classes in your code, and what their
-  function is in the overall game.
+- Overview of the claases in my code
   GameBoard - define button functions and changes how the board looks when needed. Connected
   RunTwentyFortyEight class with TwentyFortyEight class.
   RunTwentyFortyEight - adds buttons onto the board, starts the game.
@@ -53,8 +50,7 @@ PennKey: 6039222
   GameTest - tests edge cases and functions in TwentyFortyEight
 
 
-- Were there any significant stumbling blocks while you were implementing your
-  game (related to your design, or otherwise)?
+- Stumbling blocks
   I was stuck specifically on Collections and File I/O. For collections, at one point my board's
   undo functions wasn't working because it would undo all the way work correctly the first time.
   Then when you play some more and undo my board, it would undo incorrectly. The board that I had
@@ -62,9 +58,7 @@ PennKey: 6039222
   I also couldn't figure out which class I needed to implement my load and save functions in.
 
 
-- Evaluate your design. Is there a good separation of functionality? How well is
-  private state encapsulated? What would you refactor, if given the chance?
-
+- Evaluation of design.
   I do think I have a good separation of functionality amongst my classes. You can't access
   any variables outside those classes, but the values of the variables can be accessed
   through various get methods. If given the chance, I would figure out how to make the
